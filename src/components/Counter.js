@@ -5,10 +5,10 @@ const Counter = () => {
 const counter=useSelector(state=>state.counter)
 const dispatch=useDispatch();
 function increamentHandler(){
-    dispatch({type:'increament'})
+    dispatch({type:'INCREMENTBY2'})
 }
 function decreamentHandler(){
-    dispatch({type:'decreament'})
+    dispatch({type:'DECREMENTBY2'})
 }
   return (
     <main className={classes.counter}>
